@@ -1,14 +1,14 @@
-Visualize all walks
-all_walks is a list of lists: every sub-list represents a single random walk. If you convert this list of lists to a Numpy array, you can start making interesting plots! matplotlib.pyplot is already imported as plt.
+# Visualize all walks
+# all_walks is a list of lists: every sub-list represents a single random walk. If you convert this list of lists to a Numpy array, you can start making interesting plots! matplotlib.pyplot is already imported as plt.
 
-The nested for loop is already coded for you - don't worry about it. For now, focus on the code that comes after this for loop.
+# The nested for loop is already coded for you - don't worry about it. For now, focus on the code that comes after this for loop.
 
-Instructions
-100 XP
-Use np.array() to convert all_walks to a Numpy array, np_aw.
-Try to use plt.plot() on np_aw. Also include plt.show(). Does it work out of the box?
-Transpose np_aw by calling np.transpose() on np_aw. Call the result np_aw_t. Now every row in np_all_walks represents the position after 1 throw for the 10 random walks.
-Use plt.plot() to plot np_aw_t; also include a plt.show(). Does it look better this time?
+# Instructions
+# 100 XP
+# Use np.array() to convert all_walks to a Numpy array, np_aw.
+# Try to use plt.plot() on np_aw. Also include plt.show(). Does it work out of the box?
+# Transpose np_aw by calling np.transpose() on np_aw. Call the result np_aw_t. Now every row in np_all_walks represents the position after 1 throw for the 10 random walks.
+# Use plt.plot() to plot np_aw_t; also include a plt.show(). Does it look better this time?
 
 
 # numpy and matplotlib imported, seed set.
