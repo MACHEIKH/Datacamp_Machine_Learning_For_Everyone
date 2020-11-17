@@ -18,17 +18,17 @@
 # Finally, calculate the 95% confidence interval for each coefficient in coefficients using the bootstrap_interval() function you defined in the previous exercise. You can run bootstrap_interval? if you want a refresher on the parameters that this function takes.
 
 
-# Iterate through CV splits (Instruction 1)
-n_splits = 100
-cv = TimeSeriesSplit(n_splits=n_splits)
+# # Iterate through CV splits (Instruction 1)
+# n_splits = 100
+# cv = TimeSeriesSplit(n_splits=n_splits)
 
-# Create empty array to collect coefficients
-coefficients = np.empty([n_splits, X.shape[1]])
+# # Create empty array to collect coefficients
+# coefficients = np.empty([n_splits, X.shape[1]])
 
-for ii, (tr, tt) in enumerate(cv.split(X, y)):
-    # Fit the model on training data and collect the coefficients
-    model.fit(X[tr], y[tr])
-    coefficients[ii] = model.coef_
+# for ii, (tr, tt) in enumerate(cv.split(X, y)):
+#     # Fit the model on training data and collect the coefficients
+#     model.fit(X[tr], y[tr])
+#     coefficients[ii] = model.coef_
 
 
 # Calculate a confidence interval around each coefficient (Instruction 2)
