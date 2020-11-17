@@ -17,22 +17,22 @@
 # Drop all rows in so_survey_df where 'Gender' is missing.
 
 
-# Print the number of rows and columns (Instruction 1)
-print(so_survey_df.shape)
+# # Print the number of rows and columns (Instruction 1)
+# print(so_survey_df.shape)
 
 
-# Create a new DataFrame dropping all incomplete rows (Instruction 2)
-no_missing_values_rows = so_survey_df.dropna()
+# # Create a new DataFrame dropping all incomplete rows (Instruction 2)
+# no_missing_values_rows = so_survey_df.dropna()
 
-# Print the shape of the new DataFrame
-print(no_missing_values_rows.shape)
+# # Print the shape of the new DataFrame
+# print(no_missing_values_rows.shape)
 
 
-# Create a new DataFrame dropping all columns with incomplete rows (Instruction 3)
-no_missing_values_cols = so_survey_df.dropna(how='any',axis=1)
+# # Create a new DataFrame dropping all columns with incomplete rows (Instruction 3)
+# no_missing_values_cols = so_survey_df.dropna(how='any',axis=1)
 
-# Print the shape of the new DataFrame
-print(no_missing_values_cols.shape)
+# # Print the shape of the new DataFrame
+# print(no_missing_values_cols.shape)
 
 
 # Drop all rows where Gender is missing (Instruction 4)
